@@ -32,7 +32,7 @@ app.use("/api/admin",adminRoute);
 // Place your error middleware at the end
 app.use(errorMiddleware);
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const startServer = async () => {
   try {
     await connectDb();
