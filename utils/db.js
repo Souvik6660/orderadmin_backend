@@ -8,7 +8,7 @@ try {
     await mongoose.connect(URI);
     console.log("connection successful to DB");
 } catch (error) {
-    console.error("database connection failed ");
+    console.error("database connection failed sorry bro ");
 process.exit(0);
 }
 
